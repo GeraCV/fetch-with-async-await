@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(183, 202, 219);
 }
 
 
@@ -27,14 +28,57 @@ body {
 
 }
 
+.text-r {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.btn {
+    font-size: .9rem;
+    padding: .5rem .8rem;
+    border-radius: .3rem;
+    border-style: none;
+    background: darkslategrey;
+    color: #fff;
+}
+
+
 
 .container-image {
     width: 50%;
     height: 15em;
     border: 1px solid gray;
     border-radius: .5rem;
+    background: rgb(234, 238, 245);
+    margin: 2rem auto;
     
 
 }
 
+
+/* ESTILOS PARA LOS ELEMENTOS CREADOS */
+
+.content-image {
+    width: max-content;
+    margin: auto;
+}
+
+.name {
+    text-align: center;
+}
+.image-pokemon {
+    width: 10rem;
+    
+}
+
+
+.text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.1rem;
+}
 

@@ -76,3 +76,41 @@ btnSubmit.addEventListener('click', () => {
 
 
  
+
+
+// TRAER POKEMONS AL AZAR 
+
+const cargarPokemonAzar = async () => {
+    
+    const numRandom =  Math.round(Math.random() * 150)
+
+    const url = `https://pokeapi.co/api/v2/pokemon/${numRandom}/`
+   const answer = await fetch(url)
+    switch (answer.status) {
+        case 200:
+            const result = await answer.json()
+            //console.log(result.sprites.front_default)
+            showPokemonAzar(result)
+    }
+}
+
+const showPokemonAzar = (data) => {
+
+    const drawHtml = `
+    <div class="content-image" id="content-image">
+    <h2 class="name"> ${data.name} </h2>
+    <img src="${data.sprites.front_default}" class="image-pokemon">
+    </div>
+    `
+    containerImage.insertAdjacentHTML('beforeend', drawHtml)
+}
+
+
+azar.addEventListener('click', () => {
+    
+    deleteElem("content-image")
+    deleteElem("text")
+    cargarPokemonAzar()
+  
+   
+})
