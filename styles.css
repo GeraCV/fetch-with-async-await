@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+
+
+
+.container-register {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.register {
+    margin: .5rem;
+
+}
+
+
+.container-image {
+    width: 50%;
+    height: 15em;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    
+
+}
+
+
